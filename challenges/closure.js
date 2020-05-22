@@ -36,4 +36,4 @@ function sumation(number) {
   return sum;
 }
 
-console.log(sumation(4));
+// console.log(sumation(4));

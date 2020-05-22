@@ -7,11 +7,21 @@
 */
 
 
+function CuboidMater(attrs) {
+  this.length = attrs.length;
+  this.width = attrs.width;
+  this.height = attrs.height;
+}
+
+
 /* == Step 2: Volume Method ==
   Create a method using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
-  
   Formula for cuboid volume: length * width * height
 */
+
+CuboidMater.prototype.volume = function(){
+  return length * width * height;
+}
 
 
 /* == Step 3: Surface Area Method ==
@@ -19,6 +29,10 @@
 
   Formula for cuboid surface area of a cube: 2 * (length * width + length * height + width * height)
 */
+
+CuboidMater.prototype.surfaceArea = function() {
+  2 * (length * width) + (length * height) + (width * height);
+}
 
 
 /* == Step 4: Create a new object that uses CuboidMaker ==
