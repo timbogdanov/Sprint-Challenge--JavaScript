@@ -37,7 +37,7 @@ CuboidMaker.prototype.surfaceArea = function() {
 
 /* == Step 4: Create a new object that uses CuboidMaker ==
   Create a cuboid object that uses the new keyword to use our CuboidMaker constructor
-  Add properties and values of length: 4, width: 5, and height: 5 to cuboid.   
+  Add properties and values of length: 4, width: 5, and height: 5 to cuboid.
 */
 
 const cuboid = new CuboidMaker({
@@ -47,7 +47,7 @@ const cuboid = new CuboidMaker({
 })
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
-// console.log(cuboid.volume()); // 100
-// console.log(cuboid.surfaceArea()); // 130
+console.log(cuboid.volume()); // 100
+console.log(cuboid.surfaceArea()); // 130
 
 
