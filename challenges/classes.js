@@ -38,10 +38,15 @@ class CubeMaker extends CuboidMaker {
     cubeVolume() {
         return Math.pow(this.a, 3);
     }
+
+    cubeSurfaceArea() {
+        return 6 * Math.pow(this.a, 2);
+    }
 }
 
 const newCube = new CubeMaker ({
     a: 10,
 })
 
-console.log(newCube.cubeVolume());
+console.log(newCube.cubeVolume()); // 1000
+console.log(newCube.cubeSurfaceArea()); // 600
