@@ -6,19 +6,34 @@
 const external = "I'm outside the function";
 
 function myFunction() {
-  console.log(external);
+  // console.log(external);
   const internal = "Hello! I'm inside myFunction!";
 
   function nestedFunction() {
-    console.log(internal);
+    // console.log(internal);
   };
   nestedFunction();
 }
 myFunction();
 
-// Explanation: 
+// Explanation:
+
+/*
+  This is called a closure, a closure is created every time you create a new function. closure allows nested functions to reach outside and access anything in their parents.
+*/
 
 
 /* Task 2: Counter */
 
 /* Create a function called `sumation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function sumation(number) {
+  let sum = 0;
+  for (let i = 0; i <= number; i++) {
+    sum = sum + i;
+  }
+
+  return sum;
+}
+
+console.log(sumation(4));
