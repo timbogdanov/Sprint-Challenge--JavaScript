@@ -77,9 +77,7 @@ const populationTotal = zooAnimals.reduce(function(accumulator, item) {
 */
 
 function consume(a, b, cb) {
-  return cb(a, b) {
-    
-  }
+  return cb(a, b);
 }
 
 
@@ -88,6 +86,24 @@ function consume(a, b, cb) {
   * Create a function named multiply that returns the product of two numbers
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
+
+
+const add = function(a, b) {
+  return a + b;
+}
+
+const multiply = function(a, b) {
+  return a * b;
+}
+
+const greeting = function(first, last) {
+  return `Hello ${first} ${last}, nice to meet you!`;
+}
+
+// const add = (a, b) => a + b;
+
+// const multiply = (a, b) => a * b;
+
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
